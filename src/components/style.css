@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cabecera {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecera img {
+    width: 250px;
+}
+
+.registro-fb {
+    width: 30%;
+    background-color: #405B93;
+    color: white;
+    border: none;
+    font-size: medium;
+    border-radius: 15px;
+}
+
+.registro-google {
+    width: 30%;
+    border-color: #535353;
+    color: #535353;
+    font-size: medium;
+    border-radius: 15px;
+    
+}
+
+.registro-spotify {
+    width: 30%;
+    background-color:#1ED760;
+    border: none;
+    color:black;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.registro-fb:hover, .registro-google:hover, .registro-spotify:hover {
+    transform: scale(1.1);
+}
+
+.cabecera button, .registro-spotify {
+    height: 45px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 1%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+
+.select-nacimiento {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#nacimiento-menor {
+    width: 25%;
+}
+
+#nacimiento-medio {
+    width: 45%;
+}
+
+#nacimiento-mayor {
+    width: 30%;
+}
+
+/*.input-nacimiento-mes select {
+    width: 100%;
+    height: 35px;
+}*/
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-text-cero,  .input-text-uno, .input-text-dos, .input-nacimiento-cero {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.input-text-cero, .input-text-dos, .input-nacimiento-cero {
+    font-size: small;
+}
+
+.input-sexo label {
+    font-weight:600;
+    font-size:15px;
+}
+
+.input-nacimiento-cero {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.input-text-cero {
+    font-weight: bold;
+}
+
+.fin-formulario {
+    display:flex;
+    justify-content: center;
+    height: 80px;
+}
+
+.error-mensaje {
+    outline: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.input-sexo {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+input[type="checkbox"] {
+    /* Agregar margen a la derecha del checkbox */
+    margin-right: 10px;
+  }  
+
+.caja-texto, .input-nacimiento-mes select {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-color: #535353;
+    padding-left: 10px;
+    margin-bottom: 0;  
+}
+
+.error-mensaje {
+    color: red;
+}
