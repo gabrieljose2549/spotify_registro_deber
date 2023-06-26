@@ -368,16 +368,27 @@ const Form = (props) => {
                     </div>
 
                     <div className="input">
+                        <br></br>
                         <div className="input-text-cero">
                             <input type="checkbox" id="publicidad-spotify" onChange={handleAdware} checked={state.adwareAgreement}/>
                             <label htmlFor="publicidad-spotify">Prefiero no recibir publicidad de Spotify</label>
                         </div>
-
+                        
                         <div className="input-text-cero">
                             <input type="checkbox" id="compartir-spotify" onChange={handleShare} checked={state.shareAgreement}/>
                             <label htmlFor="compartir-spotify">Compartir mis datos de registro con los proveedores de contenido de Spotify para fines de marketing.</label>
                         </div>
 
+                    </div>
+
+                    <div>
+                        <br></br>
+                        <p className='mensaje-de-cierre'>
+                            Al registrarte, aceptas los <a href="https://www.spotify.com/ec/legal/end-user-agreement/" className='enlace-texto'>Términos y Condiciones de Uso</a> de Spotify.
+                        </p>
+                        <p className='mensaje-de-cierre'>
+                            Para obtener más información sobre cómo Spotify recopila, usa, comparte y protege tus datos personales, lee la <a href="https://www.spotify.com/ec/legal/privacy-policy/" className='enlace-texto'>Política de Privacidad de Spotify</a>.
+                        </p>
                     </div>
 
                     <div className="fin-formulario">

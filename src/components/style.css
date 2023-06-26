@@ -160,3 +160,13 @@ input[type="checkbox"] {
 .error-mensaje {
     color: red;
 }
+
+.mensaje-de-cierre {
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.enlace-texto {
+    color: #1ED760;
+    text-decoration: underline;
+}
